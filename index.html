@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi</title>
+</head>
+<body>
+    <h1>Basit Toplama Hesap Makinesi</h1>
+    <form method="post">
+        <input type="number" name="num1" placeholder="1. Sayı" required>
+        <input type="number" name="num2" placeholder="2. Sayı" required>
+        <button type="submit">Hesapla</button>
+    </form>
+    {% if result is not none %}
+        <h2>Sonuç: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
